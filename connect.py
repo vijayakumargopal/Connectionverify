@@ -6,7 +6,7 @@ for x in range(len(inputList)) :
     for y in range(x, len(inputList)):
         if(minimum > inputList[y]) :
             minimum = inputList[y]
-            temp = y
-    inputList[x] , inputList[temp] = minimum, inputList[x]
+            minPos = y
+    inputList[x] , inputList[minPos] = minimum, inputList[x]
 
 print(inputList)
